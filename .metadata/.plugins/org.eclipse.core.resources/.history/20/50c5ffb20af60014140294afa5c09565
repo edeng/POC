@@ -1,0 +1,22 @@
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+//import org.w3c.dom.Document;
+//import org.w3c.dom.Element;
+//import org.w3c.dom.NodeList;
+//import org.w3c.tidy.Tidy;
+
+
+public class Page {
+	
+	
+	public static void main(String[] args) throws IOException {
+		Document doc = Jsoup.connect("test.html").get(); 
+		Element body = doc.body();
+		System.out.println(body.text()); 
+	}
+}

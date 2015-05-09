@@ -1,0 +1,9 @@
+import java.io.IOException;
+
+
+public class PageTest {
+	public static void main(String[] args) throws IOException {
+		String url = "http://www.theonion.com/article/god-realizes-he-forgot-put-souls-humans-50378";
+		Page page = new Page(url); 
+	}
+}

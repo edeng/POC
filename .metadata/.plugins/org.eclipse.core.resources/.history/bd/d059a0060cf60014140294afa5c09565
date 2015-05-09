@@ -1,0 +1,22 @@
+import java.io.*;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class Page {
+	public static void main(String[] args) throws IOException {
+		Document doc = Jsoup.connect("http://www.nytimes.com/2015/05/09/your-money/some-new-math-for-the-4-percent-retirement-rule.html?hp&action=click&pgtype=Homepage&module=photo-spot-region&region=top-news&WT.nav=top-news").get(); 
+		//Element title = doc.select("h1").first(); 
+		Element title = doc.getElementsByTag("h1").get(0); 
+		System.out.println(title.text()); 
+		//System.out.println("Title " + title.text()); 
+	}
+	
+//	public Page(String URL) throws IOException {
+//		Document doc = Jsoup.connect(URL).get();
+//		Element title = doc.select("h1").first(); 
+//		
+//	}
+}
