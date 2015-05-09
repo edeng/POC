@@ -1,0 +1,22 @@
+import java.io.*;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class Page {
+	public static void main(String[] args) throws IOException {
+		Document doc = Jsoup.connect("http://nyti.ms/1IlVVya").get(); 
+		//Element title = doc.select("h1").first(); 
+		Element title = doc.getElementsByTag("h1").first(); 
+		System.out.println(title.text()); 
+		//System.out.println("Title " + title.text()); 
+	}
+	
+//	public Page(String URL) throws IOException {
+//		Document doc = Jsoup.connect(URL).get();
+//		Element title = doc.select("h1").first(); 
+//		
+//	}
+}

@@ -1,0 +1,14 @@
+import java.io.*;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class Page {
+	public Page(String URL) throws IOException {
+		Document doc = Jsoup.connect(URL).get();
+		Element title = doc.select("h1").first(); 
+		
+	}
+}

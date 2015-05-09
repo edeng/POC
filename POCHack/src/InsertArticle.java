@@ -1,0 +1,39 @@
+import java.net.UnknownHostException;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.MongoClient;
+
+public class InsertArticle {
+	public static void main(String[] args) throws UnknownHostException {
+		InsertArticle ia = new InsertArticle("test", "amrita", "5-9-2015",
+				"file.txt");
+
+	}
+
+	private long aid;
+
+	public InsertArticle(String title, String author, String date, String txtfn)
+			throws UnknownHostException {
+		// Open mongo
+		MongoClient mongo = new MongoClient();
+		DB db = mongo.getDB("test");
+		DBCollection dbc = db.getCollection("Articles");
+
+		BasicDBObject doc = new BasicDBObject();
+		long size = dbc.getCount();
+		aid = size + 1;
+		doc.put("title", title);
+		doc.put("author", author);
+		doc.put("textfile", txtfn);
+		doc.put("date", date);
+
+		
+		mongo.close();
+	}
+
+	public long getAid() {
+		return aid;
+	}
+}
