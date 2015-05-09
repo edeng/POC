@@ -21,7 +21,8 @@ public class URLParser {
 			
 //			InsertArticle insertArticle = new InsertArticle(article.getTitle(), article.getAuthor(),
 //					article.getDate(), article.getText(), article.getImgURL());
-	
+			
+			
 		}		
 		input.close();
 	}

@@ -17,13 +17,13 @@ public class URLParser {
 			Article article = makeArticle(URL); 
 			Page page = new Page(article);
 			
-			System.out.println(article.toString());
+			article.toString();
 			
 //			InsertArticle insertArticle = new InsertArticle(article.getTitle(), article.getAuthor(),
 //					article.getDate(), article.getText(), article.getImgURL());
-	
+			
+			
 		}		
-		input.close();
 	}
 	
 	// Takes in the URL of a site and returns an Article with appropriate attributes
