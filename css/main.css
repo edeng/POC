@@ -114,7 +114,7 @@ a:hover {
 }
 
 h2 { 
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 #discussion { 
@@ -142,7 +142,7 @@ footer {
 #one h2 {
     z-index:100;
     position:absolute;    
-    color:white;
+    color:black;
     font-size:24px;
     font-weight:bold;
     left:150px;
@@ -152,7 +152,7 @@ footer {
  #two h2 {
     z-index:100;
     position:absolute;    
-    color:white;
+    color:black;
     font-size:24px;
     font-weight:bold;
     left:150px;
@@ -162,7 +162,7 @@ footer {
  #three h2 {
     z-index:100;
     position:absolute;    
-    color:white;
+    color:black;
     font-size:24px;
     font-weight:bold;
     left:50%;
@@ -172,7 +172,7 @@ footer {
  #four h2 {
     z-index:100;
     position:absolute;    
-    color:white;
+    color:black;
     font-size:24px;
     font-weight:bold;
     left:50%;
@@ -182,9 +182,9 @@ footer {
  #five h2 {
     z-index:100;
     position:absolute;    
-    color:white;
+    color:black;
     font-size:24px;
     font-weight:bold;
-    left:50%;
-    top: 45%;
+    left:65%;
+    top: 50%;
  }
