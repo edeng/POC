@@ -91,12 +91,12 @@ a:hover {
 
 div > .articles:hover { 
 	background-color: white;
-	opacity: .7;
+	opacity: .9;
 }
 
-/*WHY THIS NO WORK!?!?!?!*/
-h2 > .articles { 
-	padding: 10px;
+.articles h2 { 
+	margin: auto;
+	padding: 20px;
 }
 
 footer {
