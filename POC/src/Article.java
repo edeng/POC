@@ -5,12 +5,14 @@ public class Article {
 	private String date; 
 	private String imgURL;
 	private String text; 
+	private String author;
 	
-	public Article(String title, String date, String imgURL, String text) {
+	public Article(String title, String author, String date, String imgURL, String text) {
 		this.title = title; 
 		this.date = date; 
 		this.imgURL = imgURL;
 		this.text = text;
+		this.author = author;
 	}
 	
 	public String getTitle() {
@@ -23,6 +25,14 @@ public class Article {
 	
 	public String getImgURL() {
 		return imgURL;
+	}
+	
+	public String getText() {
+		return text;
+	}
+	
+	public String getAuthor() {
+		return author;
 	}
 	
 	public String toString() {

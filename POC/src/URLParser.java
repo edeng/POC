@@ -8,15 +8,17 @@ import org.jsoup.nodes.Element;
 
 // This class is called to take in the text file with links, and adds them to the database
 public class URLParser {
-	public static void main(String[] args) throws IOException {
-		File data = new File("data.txt"); 
+	public static void main(String[] args) throws IOException, InstantiationException, IllegalAccessException {
+		File data = new File("links.txt"); 
 		Scanner input = new Scanner(data); 
 		
 		while(input.hasNextLine()) {
 			String URL = input.nextLine(); 
 			Article article = makeArticle(URL); 
 			Page page = new Page(article); 
-			// TODO: Insert page into the database
+			
+			InsertArticle insertArticle = new InsertArticle(article.getTitle(), article.getAuthor(),
+					article.getDate(), article.getText(), article.getImgURL());
 		}		
 	}
 	
@@ -28,7 +30,8 @@ public class URLParser {
 		Element date = doc.getElementsByClass("content-published").first(); 
 		Element img = doc.getElementsByTag("img").first(); 
 		Element text = doc.getElementsByClass("content-text").first().child(0); 
+		Element author = doc.getElementsByClass("content-text").first().child(0); 
 		
-		return new Article(title.text(), date.text(), img.attr("src"), text.text()); 	
+		return new Article(title.text(), "YO MOMMA", date.text(), img.attr("src"), text.text()); 	
 	}
 }
