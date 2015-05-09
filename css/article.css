@@ -56,6 +56,16 @@ h3 {
     padding: 0;
 }
 
+#logoCategory {
+    width: 500px;
+    float:none;
+    padding: 0;
+}
+
+#logoLink {
+	width: 500px;
+}
+
 /*category specific*/
 #category {
     text-align: center;
@@ -128,3 +138,66 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 }
+<<<<<<< HEAD
+=======
+
+#one img, #two img, #three img, #four img, #five img { 
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#one h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:150px;
+    top:350px;
+}
+
+ #two h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:255px;
+    top: 60%;
+ }
+
+ #three h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:50%;
+    top: 60%;
+ }
+
+ #four h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:50%;
+    top: 45%;
+ }
+
+ #five h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:65%;
+    top: 50%;
+ }
+
+>>>>>>> 81eca27106449860d8859bbf7b8ec48ffe37bd41
