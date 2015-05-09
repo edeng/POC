@@ -1,0 +1,16 @@
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+
+
+public class PageTest {
+	public static void main(String[] args) throws IOException {
+		Document doc = Jsoup.connect("test.html").get();
+		Element title = doc.getElementsByTag("h1").get(1);
+		Element date = doc.getElementsByClass("content-published").first(); 
+		Element img = doc.getElementsByTag("img").first(); 
+		Element text = doc.getElementsByClass("content-text").first().child(0); 		
+	}
+}

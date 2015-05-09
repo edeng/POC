@@ -1,0 +1,43 @@
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.w3c.tidy.Tidy;
+
+
+public class Page {
+	static Tidy t = new Tidy(); 
+	
+	
+	public static void main(String[] args) throws IOException {
+//		URL url = new URL("http://www.edenghirmai.com/");
+//		HttpURLConnection conn = (HttpURLConnection) url.openConnection(); 
+//		InputStream in = conn.getInputStream();
+//		Tidy tidy = new Tidy(); 
+//		tidy.setShowErrors(0); 
+//		tidy.setQuiet(true);
+//		tidy.setErrout(null);
+//		Document doc = tidy.parseDOM(in, null); 
+//		System.out.println(doc);
+//		//String titleText = doc.getElementsByTagName("h2").item(0).getTextContent();
+//		NodeList list = doc.getChildNodes();
+//		System.out.println(list); 
+		
+		InputStream in = new FileInputStream("test.html"); 
+		OutputStream out = null; 
+		
+		Tidy tidy = new Tidy(); 
+		Document doc = tidy.parseDOM(in, out); 
+		
+		org.w3c.dom.Node body = doc.getElementsByTagName("body").item(0);
+		Element bodyElement = (Element) body;
+		String bodyTextContent = bodyElement.getTextContent(); 
+		System.out.print("<body> TextContent:\n" + bodyElement); 
+		
+		
+		//System.out.println(titleText);
+	}
+}

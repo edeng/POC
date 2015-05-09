@@ -1,0 +1,5 @@
+public class Comment {
+	protected int id; 
+	private String text; 
+	private String date; 
+}

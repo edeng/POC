@@ -1,0 +1,22 @@
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.w3c.dom.Document;
+import org.w3c.tidy.Tidy;
+
+
+public class Page {
+	static Tidy t = new Tidy(); 
+	
+	
+	public static void main(String[] args) throws IOException {
+		URL url = new URL("http://www.edenghirmai.com/");
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection(); 
+		InputStream in = conn.getInputStream();
+		Document doc = new Tidy().parseDOM(in, null); 
+		String titleText = doc.getElementsByTagName(".name").item(0).getNodeName();
+		
+		System.out.println(titleText);
+	}
+}
