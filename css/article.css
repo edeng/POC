@@ -69,9 +69,14 @@ h3 {
 #score, #comment { 
 	font-weight: bold;
 }
+
+
 #score { 
 	float: left;
+	width: 15%;
+	padding: 0 0 0 0;
 }
+
 
 #comment { 
 	float: right;
