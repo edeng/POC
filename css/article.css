@@ -32,8 +32,8 @@ img {
 }
 */
 #content { 
-	margin-left: 18%;
-	margin-right: 18%;
+	margin-left: 14%;
+	margin-right: 14%;
 	padding: 2%;
 	background-color: rgba(255, 255, 255, 0.4);
 
@@ -41,4 +41,9 @@ img {
 
 h3 { 
 	font-size: 13px;
+}
+
+#logo {
+    width: 500px;
+    float: none;
 }
