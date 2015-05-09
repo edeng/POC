@@ -1,0 +1,50 @@
+import java.io.*;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class Article {
+	private String title; 
+	private String date; 
+	private String imgURL;
+	private String text; 
+	
+	public Article(String title, String data, String imgURL, String text) {
+		this.title = title; 
+		this.date = date; 
+		this.imgURL = imgURL;
+		this.text = text;
+	}
+	
+	public Article(String URL) throws IOException {
+		Document doc = Jsoup.connect(URL).get();
+		Element title = doc.getElementsByTag("h1").get(1);
+		Element date = doc.getElementsByClass("content-published").first(); 
+		Element img = doc.getElementsByTag("img").first(); 
+		Element text = doc.getElementsByClass("content-text").first().child(0); 
+		
+		this.title = title.text(); 
+		this.date = date.text();
+		this.imgURL = img.attr("src");
+		this.text = text.text(); 
+	}
+	
+	public String getTitle() {
+		return title; 
+	}
+	
+	public String getDate() {
+		return date;
+	}
+	
+	public String getImgURL() {
+		return imgURL;
+	}
+	
+	public String toString() {
+		return "Title " + title + "\nDate: " + date + "\nimgURL: " + imgURL + "\nText: " + text; 
+	}
+	
+}
