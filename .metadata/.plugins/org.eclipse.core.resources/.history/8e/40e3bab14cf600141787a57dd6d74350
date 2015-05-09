@@ -15,14 +15,10 @@ public class URLParser {
 		while(input.hasNextLine()) {
 			String URL = input.nextLine(); 
 			Article article = makeArticle(URL); 
-			Page page = new Page(article);
+			Page page = new Page(article); 
 			
-			article.toString();
-			
-//			InsertArticle insertArticle = new InsertArticle(article.getTitle(), article.getAuthor(),
-//					article.getDate(), article.getText(), article.getImgURL());
-			
-			
+			InsertArticle insertArticle = new InsertArticle(article.getTitle(), article.getAuthor(),
+					article.getDate(), article.getText(), article.getImgURL());
 		}		
 	}
 	

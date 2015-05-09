@@ -36,6 +36,6 @@ public class Article {
 	}
 	
 	public String toString() {
-		return "Title " + title + "\nDate: " + date + "\nimgURL: " + imgURL + "\nText: " + text + "\nAuthor: " + author;   
+		return "Title " + title + "\nDate: " + date + "\nimgURL: " + imgURL + "\nText: " + text; 
 	}
 }
