@@ -1,7 +1,6 @@
 #header { 
 	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	 padding-bottom: 25px;
 }
 
 body { 
@@ -18,7 +17,8 @@ ul {
 
 li { 
 	display: inline;
-	padding: 60px;
+	padding: 40px;
+	font-weight: bold;
 }
 
 .articles { 
@@ -33,6 +33,7 @@ li {
 	margin-right: 1%;
 	background-color: purple;
 	float: left;
+	box-shadow:4px 4px 3px #A3A3A3;	
 }
 
 #two { 
@@ -42,6 +43,7 @@ li {
 	background-color: purple;
 	float: right;
 	margin-bottom: 1%;
+	box-shadow:4px 4px 3px #A3A3A3;
 }
 
 #three { 
@@ -51,6 +53,7 @@ li {
 	background-color: purple;
 	float: right;
 	margin-bottom: 1%;
+	box-shadow:4px 4px 3px #A3A3A3;
 }
 
 #four { 
@@ -63,6 +66,7 @@ li {
 	background-color: purple;
 	float: left;
 	margin-bottom: 1%;
+	box-shadow:4px 4px 3px #A3A3A3;
 }
 
 #five { 
@@ -74,6 +78,7 @@ li {
 	background-color: purple;
 	float: left;
 	margin-bottom: none;
+	box-shadow:4px 4px 3px #A3A3A3;
 }
 
 a:link {

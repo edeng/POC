@@ -1,42 +1,46 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,400italic,400);
 
+@font-face {
+	font-family: 'Langdon';
+	src: url(../font/Langdon.otf);
+}
+
 body { 
 	font-family: 'Roboto', sans-serif;
 	background-image: url(../img/mochaGrunge.png);
 }
 
-header { 
+#header, header { 
 	text-align: center;
-	padding-bottom: 2%;
+/*	padding-bottom: 25px;*/
 }
 
 ul { 
 	list-style-type: none; 
 	margin: 0;
 	padding: 0;
+/*	bottom-padding: 10px;*/
+    font-family: 'Roboto';
+
 }
 
 li { 
 	display: inline;
 	padding: 40px;
+	font-weight: bold;
 }
 
 img { 
 	float: left;
 	padding: 25px;
+
 }
-/*.container-fluid {
-	background-color: red;
-	margin: 0px;
-	opacity: 0.9;
-}
-*/
+
 #content { 
 	margin-left: 14%;
 	margin-right: 14%;
 	padding: 2%;
 	background-color: rgba(255, 255, 255, 0.4);
-
 }
 
 h3 { 
@@ -45,10 +49,14 @@ h3 {
 
 #logo {
     width: 500px;
-    float: none;
+    float:none;
+    padding: 0;
 }
 
 /*category specific*/
-div h1 {
+#category {
     text-align: center;
+    font-size: 100px;
+    font-family: 'Langdon';
 }
+
