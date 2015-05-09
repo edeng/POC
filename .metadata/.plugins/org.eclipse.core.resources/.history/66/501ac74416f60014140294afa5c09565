@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Page {
+	protected int id;
+	private Article article; 
+	private List<Comment> comments = new ArrayList<Comment>(); 
+	
+	public Page(Article article) {
+		this(article, null); 
+	}
+	
+	public Page(Article article, List<Comment> comments) {
+		this.article = article;
+		this.comments = comments;
+	}
+}

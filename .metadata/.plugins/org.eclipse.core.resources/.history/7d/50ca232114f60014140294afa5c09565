@@ -1,0 +1,6 @@
+import java.util.List;
+
+public class Page {
+	private Article article; 
+	private List<Comment> comments; 
+}
