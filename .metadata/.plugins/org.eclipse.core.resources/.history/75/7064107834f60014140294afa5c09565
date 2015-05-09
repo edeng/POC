@@ -14,11 +14,10 @@ public class PageTest {
 		p.appendText("Da new text wow"); 
 		System.out.println("Before: " + p);
 		System.out.println(doc.toString());
-		System.out.println("\n\n");
 		
-		PrintWriter writer = new PrintWriter("test.html", "UTF-8");
-		writer.println(doc.toString());
-		writer.close();
+		
+		BufferedWriter htmlWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File("test.html")), "UTF-8"));
+		htmlWriter.write(doc.toString()); 
 		
 		File again = new File("test.html");
 		Document againDoc = Jsoup.parse(again, "UTF-8", "test.html"); 
