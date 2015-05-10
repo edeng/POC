@@ -1,6 +1,7 @@
 # Vox Populi
-
-![Logo](/screenshots/logo.png "logo")
+<p align="center">
+  ![Logo](/screenshots/logo.png "logo")
+</p>
 
 Vox Populi was a web application made at Facebook's Students of Color Hackathon. This site allows users to view news relating to people of color that aren't typically shown in mainstream media. 
 
@@ -10,7 +11,7 @@ Articles are arranged by popularity and levels of discussions and are separated 
 
 This site is crowd sourced, which mean it heavily relies on user input. Articles are submitted by the user and then analyzed by us to see if it appropriate to put the content on the site. Using parsing we are able to take the links and automatically produce an article page. 
 
-![article](/screenshots/article.png “article“)
+![Article](/screenshots/article.png “article“)
 
 ## Backend
 
