@@ -1,42 +1,49 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,400italic,400);
 
+@font-face {
+	font-family: 'Langdon';
+	src: url(../font/Langdon.otf);
+}
+
 body { 
 	font-family: 'Roboto', sans-serif;
 	background-image: url(../img/mochaGrunge.png);
 }
 
-header { 
+#header, header { 
 	text-align: center;
-	padding-bottom: 2%;
+/*	padding-bottom: 25px;*/
 }
 
 ul { 
 	list-style-type: none; 
 	margin: 0;
 	padding: 0;
+/*	bottom-padding: 10px;*/
+    font-family: 'Roboto';
+
 }
 
 li { 
 	display: inline;
 	padding: 40px;
+	font-weight: bold;
 }
 
 img { 
 	float: left;
-	padding: 25px;
+	padding: 10px;
+	width: 40%;
+	height: 70%;
+
 }
-/*.container-fluid {
-	background-color: red;
-	margin: 0px;
-	opacity: 0.9;
-}
-*/
+
 #content { 
 	margin-left: 14%;
 	margin-right: 14%;
 	padding: 2%;
 	background-color: rgba(255, 255, 255, 0.4);
-
+	padding-top: 0;
 }
 
 h3 { 
@@ -45,10 +52,152 @@ h3 {
 
 #logo {
     width: 500px;
-    float: none;
+    float:none;
+    padding: 0;
+}
+
+#logoCategory {
+    width: 500px;
+    float:none;
+    padding: 0;
+}
+
+#logoLink {
+	width: 500px;
 }
 
 /*category specific*/
-div h1 {
+#category {
     text-align: center;
+    font-size: 100px;
+    font-family: 'Langdon';
+    margin-top: 0;
+    margin-bottom: 20px;
+    vertical-align: center;
 }
+
+#score, #comment { 
+	font-weight: bold;
+}
+
+
+#score { 
+	float: left;
+	width: 15%;
+	padding: 0 0 0 0;
+}
+
+
+#comment { 
+	float: right;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 0px 4px 0px #899599;
+	-webkit-box-shadow: 0px 0px 4px 0px #899599;
+	box-shadow: 0px 0px 4px 0px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #b899b8;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Verdana;
+	font-size:12px;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 2px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+textarea { 
+	width: 100%;
+	height: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+<<<<<<< HEAD
+=======
+
+#one img, #two img, #three img, #four img, #five img { 
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#one h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:150px;
+    top:350px;
+}
+
+ #two h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:255px;
+    top: 60%;
+ }
+
+ #three h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:50%;
+    top: 60%;
+ }
+
+ #four h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:50%;
+    top: 45%;
+ }
+
+ #five h2 {
+    z-index:100;
+    position:absolute;    
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:65%;
+    top: 50%;
+ }
+
+>>>>>>> 81eca27106449860d8859bbf7b8ec48ffe37bd41
